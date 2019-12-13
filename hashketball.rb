@@ -162,18 +162,26 @@ def team_names
 end
 
 def player_numbers(teamName)
+<<<<<<< HEAD
   playerNumberArray = []
+=======
+>>>>>>> d2466ba7caccbdb1f204d60f090aee1a6109cbd8
   game_hash.each do |teamHome, teamInfo|
     if teamInfo[:team_name] == teamName
       teamInfo.each do |playerList, playerInfo|
         if playerList == :players
     playerInfo.each do |playerNumber|
+<<<<<<< HEAD
     playerNumberArray << playerNumber[:number]
+=======
+    playerNumber[:number]
+>>>>>>> d2466ba7caccbdb1f204d60f090aee1a6109cbd8
     end
     end
   end
 end
 end
+<<<<<<< HEAD
 playerNumberArray
 end
 
@@ -262,3 +270,6 @@ def long_name_steals_a_ton?
   end
   return true if finesser == player_with_longest_name
 end
+=======
+end
+>>>>>>> d2466ba7caccbdb1f204d60f090aee1a6109cbd8
